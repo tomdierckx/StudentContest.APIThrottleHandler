@@ -10,7 +10,7 @@ More info on creating custom handlers for WSO2 API Manager can be found here: ht
 
 To build this project, create a new project in eclipse by importing the source files in the "core" folder as a new maven project. This custom handler was written for API Manager v1.8.0.
 
-To install, build the project
+To install, build the project as a jar files and copy the jar file to the repository\components\lib folder of the WSO2 API Manager installation.
 
 To test it, use the samples in the "samples" folder:
   - StudentContestWeb
