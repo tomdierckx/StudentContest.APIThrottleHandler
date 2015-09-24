@@ -378,7 +378,7 @@
                <then>
                   <send>
                      <endpoint name="admin--StudentContestWeb_APIproductionEndpoint_0">
-                        <http uri-template="http://192.168.146.146:9763/i8cStudentContest/services"/>
+                        <http uri-template="http://192.168.146.1:8080/i8cStudentContest/services"/>
                      </endpoint>
                   </send>
                </then>
