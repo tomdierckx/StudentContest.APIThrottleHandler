@@ -6,10 +6,17 @@ This project exists out of a custom API Throttle Handler for the WSO2 API Manage
 
 The purpose of this throttle handler was to limit the number of API calls a student could perform via a web page to one per minute. Each student was uniquely identified by his/her school email address in the JSON payload of each submited HTTP request.
 
-To build this project, create a new project in eclipse by importing the source files in the "core" folder as a new maven project.
+More info on creating custom handlers for WSO2 API Manager can be found here: https://docs.wso2.com/display/AM180/Writing+Custom+Handlers#WritingCustomHandlers-Writingacustomhandler
+
+To build this project, create a new project in eclipse by importing the source files in the "core" folder as a new maven project. This custom handler was written for API Manager v1.8.0.
+
+To install, build the project
 
 To test it, use the samples in the "samples" folder:
-- 
+  - StudentContestWeb
+    - StudentContestWSO2APIMgr-soapui-project.xml: a SOAP-UI project that contains a client request to test the throttle handler + a mock service that can be called by the WS02 API Manager
+    - StudentContestWebAPI.xml: the WSO2 API Manager API metadata of the StudentContestWeb API created via the store
+    - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the customer API ThrottleHandler
 
 
 
