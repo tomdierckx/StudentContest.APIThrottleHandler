@@ -16,7 +16,7 @@ To test it, use the samples in the "samples" folder:
   - StudentContestWeb
     - StudentContestWSO2APIMgr-soapui-project.xml: a SOAP-UI project that contains a client request to test the throttle handler + a mock service that can be called by the WS02 API Manager
     - StudentContestWebAPI.xml: the WSO2 API Manager API metadata of the StudentContestWeb API created via the store
-    - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the customer API ThrottleHandler
+    - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the custom API ThrottleHandler
     - axis2.xml: an example of a WSO2 API Manager axis2 configuration file that uses NIO HTTP
 
 
