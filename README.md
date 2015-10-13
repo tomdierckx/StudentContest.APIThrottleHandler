@@ -19,6 +19,7 @@ To build this project, create a new project in eclipse by importing the source f
 
 To install, build the project as a jar file and copy the jar file to the repository\components\lib folder of the WSO2 API Manager installation. Update the axis2.xml configuration file of the WSO2 API Manage under repository\conf\axis2 so that it uses NIO HTTP instead of passthru (see also example config in samples folder).
 
+
 The Handler has been written to automatically detect the cluster environment. If this handler is deployed on multiple API managers running in clustered configuration. Throttling will happen on cluster level. It can however be deployed on a single instance.
 
 In samples there are the config files for deployment in a cluster or single instance of an API manager v1.9.1 and readme files defining the basic setup.
