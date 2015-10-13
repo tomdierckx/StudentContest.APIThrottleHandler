@@ -27,10 +27,10 @@ The Handler has been written to automatically detect the cluster environment. If
 In samples there are the config files for deployment in a cluster or single instance of an API manager v1.9.1 and readme files defining the basic setup.
 
 Sample files for deployment non clustered environment:
-    - StudentContestWSO2APIMgr-soapui-project.xml: a SOAP-UI project that contains a client request to test the throttle handler + a mock service that can be called by the WS02 API Manager
-    - StudentContestWebAPI.xml: the WSO2 API Manager API metadata of the StudentContestWeb API created via the store
-    - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the custom API ThrottleHandler
-    - axis2.xml: an example of a WSO2 API Manager axis2 configuration file that uses NIO HTTP and the correct JSON builder/formatter.
+ - StudentContestWSO2APIMgr-soapui-project.xml: a SOAP-UI project that contains a client request to test the throttle handler + a mock service that can be called by the WS02 API Manager
+ - StudentContestWebAPI.xml: the WSO2 API Manager API metadata of the StudentContestWeb API created via the store
+ - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the custom API ThrottleHandler
+ - axis2.xml: an example of a WSO2 API Manager axis2 configuration file that uses NIO HTTP and the correct JSON builder/formatter.
 
 Sample files for deployment clustered environment:
  - API Manager 1: Contains the configuration files for the first API manager in cluster
