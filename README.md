@@ -29,15 +29,15 @@ Sample files for deployment non clustered environment:
     - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the custom API ThrottleHandler
     - axis2.xml: an example of a WSO2 API Manager axis2 configuration file that uses NIO HTTP and the correct JSON builder/formatter.
 
-Sample files for deployment clustered environment:    - API Manager 1: Contains the configuration files for the first API manager in cluster
-        - axis2.xml: WSO2 API Manager axis2 configuration file that uses NIO HTTP and the correct JSON builder/formatter. 
-Clustering is enabled and configured for the second API manager instance.
-        - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the custom API ThrottleHandler
-        - README.md: specific install instructions for the first API manager
-    - API Manager 2: Contains the configuration files for the second API manager in cluster 
-        - axis2.xml: WSO2 API Manager axis2 configuration file that uses NIO HTTP and the correct JSON builder/formatter. Clustering is enabled and configured for the first API manager instance.
-        - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the custom API ThrottleHandler
-        - README.md: specific install instruction for the second API manager
-    - Other
-        - StudentContestWebAPI.xml: the WSO2 API Manager API metadata of the StudentContestWeb API created via the store
-        - StudentContestWSO2APIMgr-soapui-project.xml: a SOAP-UI project that contains a client request to test the throttle handler + a mock service that can be called by the WS02 API Manager
+Sample files for deployment clustered environment:
+ - API Manager 1: Contains the configuration files for the first API manager in cluster
+  - axis2.xml: WSO2 API Manager axis2 configuration file that uses NIO HTTP and the correct JSON builder/formatter. Clustering is enabled and configured for the second API manager instance.
+  - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the custom API ThrottleHandler
+  - README.md: specific install instructions for the first API manager
+ - API Manager 2: Contains the configuration files for the second API manager in cluster 
+  - axis2.xml: WSO2 API Manager axis2 configuration file that uses NIO HTTP and the correct JSON builder/formatter. Clustering is enabled and configured for the first API manager instance.
+  - SynapseDefinitions.xml: an example of the full synapse config of a working installation, including the custom API ThrottleHandler
+  - README.md: specific install instruction for the second API manager
+ - Other
+  - StudentContestWebAPI.xml: the WSO2 API Manager API metadata of the StudentContestWeb API created via the store
+  - StudentContestWSO2APIMgr-soapui-project.xml: a SOAP-UI project that contains a client request to test the throttle handler + a mock service that can be called by the WS02 API Manager
