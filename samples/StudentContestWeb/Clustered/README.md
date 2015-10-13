@@ -18,4 +18,4 @@ Before adding the handler to the API on the API managers make sure you added the
 After starting both the servers check for ‘member joined’ log messages in all consoles to validate the clustered configuration.
 
 After the handler has been implemented on both API managers. And applied in the synapseDefinition for the studentContest API. 
-The Throttling per email adress should happen on cluster level. A second call to APIM1/APIM2 will be trottled out.
+The Throttling per email adress should happen on cluster level. A second call with the same email adress to APIM1/APIM2 will be trottled out.
