@@ -4,7 +4,7 @@ WSO2 Email Throttler.
 
 This project is based on the original Throttle Handler used for the i8c Student Contest in the spring of 2015.
 
-The purpose of this throttle handler was to limit the number of API calls a student could perform via a web page to one per minute. Each student was uniquely identified by his/her school email address in the JSON payload of each submitted HTTP request.
+The purpose of this throttle handler was to limit the number of API calls a student could perform via a web page to one for each minute. Each student was uniquely identified by his/her school email address in the JSON payload of each submitted HTTP request.
 
 The problem with this handler was the lack of clustered support. In this variant there is support for clustering using the JCache library. And a complete overhaul of the handler flow based on the original IP throttlers found in WSO2 products. 
 
