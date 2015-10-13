@@ -1,6 +1,8 @@
+#Clustered Configuration
+
 In this directory 2 configuration files for 2 clustered API manager instances.
 
-Both API Managers have been configured with the API found in the "../Other" directory.
+Both API Managers have been configured with the API found in the "/Other" directory.
 
 For installation of 2 API managers running on the same HOST: using the <offset></offset> tag in the carbon.xml file.
 
