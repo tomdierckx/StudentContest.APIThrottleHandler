@@ -6,7 +6,7 @@ Both API Managers have been configured with the API found in the "/Other" direct
 
 For installation of 2 API managers running on the same HOST: using the <offset></offset> tag in the carbon.xml file.
 
- -Errors can occure on the ThriftClient's conflicting ports change in the api-manager.xml
+ - Errors can occure on the ThriftClient's conflicting ports change in the api-manager.xml
 
 Manipulation of the (on linux "/etc/hosts" ) hosts file is nessasary to make this configuration work.
 Add the following to the hosts file:
