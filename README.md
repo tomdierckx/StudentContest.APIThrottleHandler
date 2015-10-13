@@ -9,11 +9,12 @@ The purpose of this throttle handler was to limit the number of API calls a stud
 The problem with this handler was the lack of clustered support. In this variant there is support for clustering using the JCache library. And a complete overhaul of the handler flow based on the original IP throttlers found in WSO2 products. 
 
 The extraction of the email address out of the Message Context has been tested with the following message builders:
-    - v1.9.1 -> org.apache.synapse.commons.json.JsonBuilder
-    - v1.8.0 -> org.apache.axis2.json.JSONBuilder
+ - v1.9.1 -> org.apache.synapse.commons.json.JsonBuilder
+ - v1.8.0 -> org.apache.axis2.json.JSONBuilder
 More info on these builders can be found here: https://docs.wso2.com/display/AM191/Transforming+API+Message+Payload
 
-More info on creating custom handlers for WSO2 API Manager can be found here: https://docs.wso2.com/display/AM190/Writing+Custom+Handlers
+More info on creating custom handlers for WSO2 API Manager can be found here:
+https://docs.wso2.com/display/AM190/Writing+Custom+Handlers
 
 To build this project, create a new project in eclipse by importing the source files in the "core" folder as a new maven project. This custom handler has been tested in API manager v1.8.0 and v1.9.1.
 
