@@ -10,6 +10,7 @@ Manipulation of the (on linux "/etc/hosts" ) hosts file is nessasary to make thi
 Add following to the hosts file:
 
 127.0.0.1   wso2.node1
+
 127.0.0.1   wso2.node2
 
 Before adding the handler to the API on the API managers make sure you added the .jar file you build out of the core files in the "repository/components/lib" directory. After adding to the "lib" directory restart the server. Validate in de "repository/components/dropins" if the jar is present for succesfull deployment.
