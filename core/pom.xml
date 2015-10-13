@@ -1,73 +1,74 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"> 
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>be.i8c.synapse</groupId>
-  <artifactId>studentcontest</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <repositories>
-     <repository>
-         <id>wso2-maven2-repository</id>
-         <url>http://dist.wso2.org/maven2</url>
-     </repository>
-     <repository>
-         <id>apache-Incubating-repo</id>
-         <name>Maven Incubating Repository</name>
-         <url>http://people.apache.org/repo/m2-incubating-repository</url>
-     </repository>
-     <repository>
-         <id>apache-maven2-repo</id>
-         <name>Apache Maven2 Repository</name>
-         <url>http://repo1.maven.org/maven2/</url>
-     </repository>
-  </repositories>
-  
-  
-  <dependencies>
-     <dependency>
-         <groupId>org.apache.synapse</groupId>
-         <artifactId>synapse-core</artifactId>
-         <version>2.1.2-wso2v6</version>
-     </dependency>
-     <dependency>
-         <groupId>org.apache.axis2</groupId>
-         <artifactId>axis2-json</artifactId>
-         <version>1.6.1-wso2v10</version>
-     </dependency>
-     <dependency>
-         <groupId>org.wso2.carbon</groupId>
-         <artifactId>org.wso2.carbon.apimgt.gateway</artifactId>
-         <version>1.2.2</version>
-     </dependency>
-  </dependencies>
-  
-    <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.9</version>
-        <executions>
-          <execution>
-            <id>copy-installed</id>
-            <phase>install</phase>
-            <goals>
-              <goal>copy</goal>
-            </goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>${project.groupId}</groupId>
-                  <artifactId>${project.artifactId}</artifactId>
-                  <version>${project.version}</version>
-                  <type>${project.packaging}</type>
-                </artifactItem>
-              </artifactItems>
-              <outputDirectory>C:\wso2\wso2am-1.8.0\repository\components\lib</outputDirectory>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>be.i8c.synapse</groupId>
+	<artifactId>studentcontest</artifactId>
+	<version>0.0.2-SNAPSHOT</version>
+
+	<repositories>
+		<repository>
+			<id>wso2-maven2-repository</id>
+			<url>http://dist.wso2.org/maven2</url>
+		</repository>
+		<repository>
+			<id>apache-Incubating-repo</id>
+			<name>Maven Incubating Repository</name>
+			<url>http://people.apache.org/repo/m2-incubating-repository</url>
+		</repository>
+		<repository>
+			<id>apache-maven2-repo</id>
+			<name>Apache Maven2 Repository</name>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+	</repositories>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.synapse</groupId>
+			<artifactId>synapse-core</artifactId>
+			<version>2.1.2-wso2v6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2-json</artifactId>
+			<version>1.6.1-wso2v10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.wso2.carbon</groupId>
+			<artifactId>org.wso2.carbon.apimgt.gateway</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.9</version>
+				<executions>
+					<execution>
+						<id>copy-installed</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${project.artifactId}</artifactId>
+									<version>${project.version}</version>
+									<type>${project.packaging}</type>
+								</artifactItem>
+							</artifactItems>
+							<outputDirectory>C:\Users\dierct2\Documents\VMShare</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
